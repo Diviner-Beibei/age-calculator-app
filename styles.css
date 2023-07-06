@@ -1,0 +1,144 @@
+:root{
+  --color-primary--Purple:hsl(259, 100%, 65%);
+  --color-primary--light-red:hsl(0, 100%, 67%);
+
+  --color-neutral--white:hsl(0, 0%, 100%);
+  --color-neutral--off-white:hsl(0, 0%, 94%);
+  --color-neutral--light-grey:hsl(0, 0%, 86%);
+  --color-neutral--smokey-grey:hsl(0, 1%, 44%);
+  --color-neutral--off-black:hsl(0, 0%, 8%);
+
+  --ff-outfit:'Outfit', sans-serif;
+  --ff-poppins:'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+svg{
+  width: 100%;
+  display: block;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 3.2rem;
+  background-color: var(--color-neutral--off-white);
+}
+
+.container{
+  width: 100%;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.date-form{
+  background-color: var(--color-neutral--white);
+  max-width: 60rem;
+  min-width: 41.5rem;
+  border-radius: 1.5rem 1.5rem 10rem 1.5rem;
+  padding: 2rem 2.5rem;
+  margin: 0 2rem;
+}
+
+.date-form fieldset{
+  border: none;
+}
+
+.line{
+  height: 1px;
+  background-color: var(--color-neutral--light-grey);
+  width: 100%;
+  position: relative;
+}
+
+.input-fieldset{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+.input-fieldset .form-group label{
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+}
+
+.input-fieldset .form-group label,
+input{
+  font-family: var(--ff-outfit);
+  color: var(--color-neutral--smokey-grey);
+  font-weight: 400;
+}
+
+.error-hint{
+  color: var(--color-primary--light-red);
+  font-family: var(--ff-poppins);
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+input{
+  min-height: 3.2rem;
+  padding: 1rem 1.2rem;
+  width: 100%;
+  font-size: 2.8rem;
+  border: 1px solid var(--color-neutral--light-grey);
+  border-radius: 0.6rem;
+}
+
+.cal-btn{
+  border-radius: 50%;
+  background-color: var(--color-primary--Purple);
+  padding: 1.5rem;
+  border: none;
+  position: absolute;
+  top:0;
+  right: 50%;
+  transform: translate(50%,-50%);
+}
+
+.out-fieldset{
+  margin-top: 2rem;
+}
+
+.out-fieldset h1{
+  font-family: var(--ff-poppins);
+}
+
+.out-fieldset h1 span{
+  color: var(--color-primary--Purple);
+}
+
+@media (min-width: 600px) {
+  .date-form{
+    padding: 2rem 4rem;
+    margin: 0;
+  }
+
+  .cal-btn{
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+  }
+
+  .input-fieldset{
+    margin-right: 12rem;
+    margin-bottom: 3rem;
+  }
+
+  .input-fieldset .form-group label{
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Age Calculator App</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces&family=Outfit:wght@700&family=Poppins:ital,wght@1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <form action="" class="date-form">
+      <fieldset class="input-fieldset">
+        <div class="form-group">
+          <label for="day-input">DAY</label>
+          <input type="text" id="day-input" class="day-input" maxlength="2" placeholder="DD">
+          <p class="error-hint">This field is required</p>
+        </div>
+
+        <div class="form-group">
+          <label for="month-input">MONTH</label>
+          <input type="text" id="month-input" class="month-input" maxlength="2" placeholder="MM">
+          <p class="error-hint">This field is required</p>
+        </div>
+
+        <div class="form-group">
+          <label for="year-input">YEAR</label>
+          <input type="text" id="year-input" class="year-input" maxlength="4" placeholder="YYYY">
+          <p class="error-hint">This field is required</p>
+        </div>
+      </fieldset>
+
+      <div class="line">
+        <button class="cal-btn">
+          <img src="assets/images/icon-arrow.svg" alt="">
+        </button>
+      </div>
+
+      <fieldset class="out-fieldset">
+        <h1><span class="out-year">--</span> years</h1>
+        <h1><span class="out-month">--</span> months</h1>
+        <h1><span class="out-day">--</span> days</h1>
+      </fieldset>
+
+    </form>
+  </main>
+  <!-- <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Rachel</a>.
+  </footer> -->
+  <script src="script.js"></script>
+</body>
+
+</html>
